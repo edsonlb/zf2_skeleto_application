@@ -1,4 +1,4 @@
-ZendSkeletonApplication
+ZendSkeletonApplication - Edson Version
 =======================
 
 Introduction
