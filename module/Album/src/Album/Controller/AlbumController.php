@@ -9,21 +9,21 @@
 
 namespace Album\Controller;
 
+error_reporting(0);  //Error and alerts
+
 use Zend\Mvc\Controller\AbstractActionController;
+use Zend\View\Model\ViewModel;
 
 class AlbumController extends AbstractActionController
 {
-
-    public function fooAction()
-    {
-        // This shows the :controller and :action parameters in default route
-        // are working when you browse to /album/album/foo
-        return array();
-    }
+    
+    protected $albumTable;
     
     public function indexAction()
     {
-        return array();
+        return new ViewModel(array(
+             'albums' => $this->getAlbumTable()->fetchAll(),
+         ));
     }
     
     public function addAction()
@@ -36,5 +36,14 @@ class AlbumController extends AbstractActionController
     
     public function deleteAction()
     {
+    }
+    
+    public function getAlbumTable()
+    {
+        if (!$this->albumTable) {
+            $sm = $this->getServiceLocator();
+            $this->albumTable = $sm->get('Album\Model\AlbumTable');
+        }
+        return $this->albumTable;
     }
 }
