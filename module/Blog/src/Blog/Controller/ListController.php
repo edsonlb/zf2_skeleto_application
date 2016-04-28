@@ -1,5 +1,5 @@
 <?php
- // Filename: /module/Blog/src/Blog/Controller/ListController.php
+ // FileName: /module/Blog/src/Blog/Controller/ListController.php
  namespace Blog\Controller;
 
  use Blog\Service\PostServiceInterface;
@@ -22,6 +22,15 @@
      {
          return new ViewModel(array(
              'posts' => $this->postService->findAllPosts()
+         ));
+     }
+
+     public function detailAction()
+     {
+         $id = $this->params()->fromRoute('id');
+
+         return new ViewModel(array(
+             'post' => $this->postService->findPost($id)
          ));
      }
  }
