@@ -1,4 +1,5 @@
 <?php
+ // Filename: /module/Blog/src/Blog/Model/PostInterface.php
  namespace Blog\Model;
 
  interface PostInterface

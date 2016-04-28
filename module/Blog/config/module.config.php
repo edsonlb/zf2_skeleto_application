@@ -1,5 +1,5 @@
 <?php
-
+ // Filename: /module/Blog/config/module.config.php
  return array(
      'service_manager' => array(
          'invokables' => array(
