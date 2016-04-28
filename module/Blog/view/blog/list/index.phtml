@@ -1,10 +1,11 @@
-<h1>My Blog</h1>
+<!-- Filename: /module/Blog/view/blog/list/index.phtml -->
+ <h1>My Blog</h1>
 
-<?php foreach ($this->posts as $post): ?>
+ <?php foreach ($this->posts as $post): ?>
  <article>
      <h1 id="post<?= $post->getId() ?>"><?= $post->getTitle() ?></h1>
      <p>
          <?= $post->getText() ?>
      </p>
  </article>
-<?php endforeach ?>
+ <?php endforeach ?>
