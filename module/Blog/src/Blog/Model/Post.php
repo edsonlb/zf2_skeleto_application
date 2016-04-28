@@ -1,5 +1,6 @@
 <?php
-namespace Blog\Model;
+ // Filename: /module/Blog/src/Blog/Model/Post.php
+ namespace Blog\Model;
 
  class Post implements PostInterface
  {

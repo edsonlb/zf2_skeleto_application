@@ -1,5 +1,6 @@
 <?php
-namespace Blog\Factory;
+ // Filename: /module/Blog/src/Blog/Factory/ListControllerFactory.php
+ namespace Blog\Factory;
 
  use Zend\ServiceManager\FactoryInterface;
  use Zend\ServiceManager\ServiceLocatorInterface;
