@@ -1,10 +1,10 @@
 <?php
 namespace Blog\Factory;
 
- use Blog\Controller\ListController;
  use Zend\ServiceManager\FactoryInterface;
  use Zend\ServiceManager\ServiceLocatorInterface;
-
+ use Blog\Service\PostService;
+ 
  class ListControllerFactory implements FactoryInterface
  {
      /**
@@ -15,10 +15,10 @@ namespace Blog\Factory;
       * @return mixed
       */
      public function createService(ServiceLocatorInterface $serviceLocator)
-     {
-         $realServiceLocator = $serviceLocator->getServiceLocator();
-         $postService        = $realServiceLocator->get('Blog\Service\PostServiceInterface');
-
-         return new ListController($postService);
+     {   
+         return new PostService(
+             $serviceLocator->get('Blog\Mapper\PostMapperInterface')
+         );
+         
      }
  }
