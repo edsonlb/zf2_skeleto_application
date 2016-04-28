@@ -1,7 +1,8 @@
 <?php
-namespace Blog\Service;
+ // Filename: /module/Blog/src/Blog/Service/PostServiceInterface.php
+ namespace Blog\Service;
 
- use Blog\Module\PostInterface;
+ use Blog\Model\PostInterface;
 
  interface PostServiceInterface
  {

@@ -1,0 +1,289 @@
+[33mcommit 5d5afd1252cef8a07f74cd0b45de617154c08dd1[m
+Author: edson <edson>
+Date:   Thu Apr 28 15:35:14 2016 +0200
+
+    Getting error
+
+[33mcommit 4b129e189e64874c0e5b1e94e3e6c6f1bb1fed3f[m
+Author: edson <edson>
+Date:   Thu Apr 28 10:39:57 2016 +0200
+
+    Creating more configurations
+
+[33mcommit ec6822fc69a831a2ef38fb5ba8a4aca9d0803df6[m
+Author: edson <edson>
+Date:   Wed Apr 27 18:00:21 2016 +0200
+
+    Creating Blog Module
+
+[33mcommit e6fde93ac2ec74158095844a425966da618ded8a[m
+Author: edson <edson>
+Date:   Wed Apr 27 16:35:09 2016 +0200
+
+    Configuring routes
+
+[33mcommit 2292a7d6a713b9dec6aa2585113f3f1f2d343ecc[m
+Author: edson <edson>
+Date:   Wed Apr 27 15:48:29 2016 +0200
+
+    Adding OK
+
+[33mcommit 0136a01f230283fca09f60d51fdb8fdc31dd3ebd[m
+Author: edson <edson>
+Date:   Wed Apr 27 12:59:49 2016 +0200
+
+    Configuring routes
+
+[33mcommit 0dc184d0af5dd399a881cf86ea876cbb3d016356[m
+Author: edson <edson>
+Date:   Wed Apr 27 12:43:05 2016 +0200
+
+    Altering layout
+
+[33mcommit 8b6bcfca1dd934d0c505bf9b8b7ba7545c8a9d5c[m
+Author: edson <edson>
+Date:   Wed Apr 27 12:02:28 2016 +0200
+
+    Configuring routes
+
+[33mcommit 7936be47e4f317aa64cc29176204008ad89afd4e[m
+Author: edson <edson>
+Date:   Wed Apr 27 10:58:09 2016 +0200
+
+    Adding View files
+
+[33mcommit 5ff118a8d68f8153f54e07a61b93eb482763ab2d[m
+Author: edson <edson>
+Date:   Wed Apr 27 10:30:43 2016 +0200
+
+    zend configuration
+
+[33mcommit 5c1b3ffb1dda259cca15b2d399064ecb8131f6b0[m
+Author: edson <edson>
+Date:   Wed Apr 27 10:11:29 2016 +0200
+
+    First ZF2 tutorial
+
+[33mcommit 57c1011bb356546d0b4b8b6b3b26bd5e870acbcf[m
+Merge: 6ba430f e6cbd3a
+Author: Maks3w <github.maks3w@virtualplanets.net>
+Date:   Thu Oct 22 15:07:42 2015 +0200
+
+    Merge pull request #319 from websafe/master
+    
+    Fixes #318 chef => bento
+
+[33mcommit e6cbd3aaeefbd68e9e5f45717bd32f881f926b86[m
+Author: Thomas Szteliga <ts@websafe.pl>
+Date:   Thu Oct 22 14:59:11 2015 +0200
+
+    Fixes #318 chef => bento
+
+[33mcommit 6ba430f6a2006d9f37c24b039fda3488e8681c91[m
+Merge: 5a7ef8d 2c9e759
+Author: Marco Pivetta <ocramius@gmail.com>
+Date:   Mon Sep 14 15:46:45 2015 +0200
+
+    Merge pull request #307 from Maks3w/Maks3w-patch-1
+    
+    Application config with PHP 5.5 ::class style
+
+[33mcommit 2c9e759f873b7763c4437c019d45b780dbc6fefb[m
+Author: Maks3w <github.maks3w@virtualplanets.net>
+Date:   Mon Sep 14 15:42:14 2015 +0200
+
+    Application config with PHP 5.5 ::class style
+
+[33mcommit 5a7ef8d0e775a7e372804ac89f2adfb01e5e09ff[m
+Merge: ed95ef1 a6788df
+Author: Marco Pivetta <ocramius@gmail.com>
+Date:   Tue Sep 1 02:32:34 2015 +0100
+
+    Merge pull request #304 from pdgcvs/change-vagrant-box
+    
+    Vagrant box changed from chef/ubuntu-14.04 to bento/ubuntu-14.04
+
+[33mcommit a6788df64bcf55caab8aac17be3b0ad2177811be[m
+Author: pdgcvs <pdgcvs@gmail.com>
+Date:   Mon Aug 31 22:01:06 2015 -0300
+
+    Changed vagrant box from chef/ubuntu-14.04 to bento/ubuntu-14.04
+
+[33mcommit ed95ef1eb6ede3a6369f72793dcc06ace331cc7a[m
+Merge: 7268f29 b2da7ab
+Author: Maks3w <github.maks3w@virtualplanets.net>
+Date:   Fri Aug 28 09:24:59 2015 +0200
+
+    Merge pull request #302 from gianarb/feature/composer-lock
+    
+    Fixed #301 composer.lock mismatch
+
+[33mcommit b2da7ab93a139b9f24bf2730d69f029ccf7974ed[m
+Author: Gianluca Arbezzano <gianarb92@gmail.com>
+Date:   Fri Aug 28 09:06:21 2015 +0200
+
+    Fixed #301 composer.lock mismatch
+
+[33mcommit 7268f29d65fc36f89d52d68fa3eb2acf3f934817[m
+Merge: febab30 5fb8ee0
+Author: Maks3w <github.maks3w@virtualplanets.net>
+Date:   Fri Aug 14 21:08:04 2015 +0200
+
+    Merge pull request #298 from websafe/hotfix-typo-in-readme
+    
+    Fixed typo in README.md.
+
+[33mcommit 5fb8ee02ad4d6bf9d5dca0c272a485db25de10cd[m
+Author: Thomas Szteliga <ts@websafe.pl>
+Date:   Fri Jul 24 13:23:08 2015 +0200
+
+    Fixed typo.
+
+[33mcommit febab30826a9778e1d3a1240479501d54b9a19eb[m
+Merge: 46bd9ba 3c26d89
+Author: Rob Allen <rob@akrabat.com>
+Date:   Mon Jul 13 07:20:43 2015 +0100
+
+    Merge pull request #297 from samsonasik/patch-2
+    
+    added missing comma
+
+[33mcommit 3c26d891f6759a71d25fa87c15ca14c8b1164126[m
+Author: Abdul Malik Ikhsan <samsonasik@gmail.com>
+Date:   Mon Jul 13 05:28:25 2015 +0700
+
+    added missing comma
+
+[33mcommit 46bd9ba5168846fa3f6e9328da5d8fa07177ba59[m
+Author: Maks3w <github.maks3w@virtualplanets.net>
+Date:   Fri Jun 12 10:28:15 2015 +0200
+
+    [README] Link to Vagrantfile
+
+[33mcommit 7f276f308d85c936fcdbe7287d0c8b10050ac227[m
+Merge: 1bc5245 4efd286
+Author: Rob Allen <rob@akrabat.com>
+Date:   Fri Jun 12 08:12:05 2015 +0100
+
+    Merge branch 'bacinsky-hotfix/index-php-cli-server'
+    
+    Closes #283
+
+[33mcommit 4efd2865f308df64f741c30f7137005f42d24924[m
+Author: Rob Allen <rob@akrabat.com>
+Date:   Fri Jun 12 08:10:15 2015 +0100
+
+    Only test for path when the SAPI is cli-server
+
+[33mcommit eba4ea881828cb6a3443bd71b6f1f1a5fe4b0057[m
+Author: Peter Bacinsky <peter@bacinsky.sk>
+Date:   Fri May 15 19:15:57 2015 +0200
+
+    Updated public/index.php, realpath() the $path to decide if it's a same file (when symlink)
+
+[33mcommit 117f133f0726aa17033ea5c360558999fe0b456b[m
+Author: Peter Bacinsky <peter@bacinsky.sk>
+Date:   Sun Apr 26 05:11:51 2015 +0200
+
+    Updated public/index.php, exclude cli-server static file requests to self
+
+[33mcommit 1bc5245dfe1c03ad7281c2bb0057549460af2662[m
+Merge: cbec235 d119e78
+Author: Rob Allen <rob@akrabat.com>
+Date:   Fri Jun 12 08:00:19 2015 +0100
+
+    Merge branch 'jeremiahsmall-documentation/readme'
+
+[33mcommit d119e78098a96562ef5a9e182481cae52c5d518d[m
+Author: Rob Allen <rob@akrabat.com>
+Date:   Fri Jun 12 07:59:58 2015 +0100
+
+    Use sentence case for all titles
+
+[33mcommit 4d33d0cfbbe379d4118521ac5f5107ef66ff67c2[m
+Author: Jeremiah Small <me@jsmall.us>
+Date:   Thu Jun 11 16:40:58 2015 -0700
+
+    Update Vagrant section of README
+
+[33mcommit cbec2352d126d2d29e87a9904f33c5c34f229411[m
+Merge: a131c30 e9d9d5c
+Author: Rob Allen <rob@akrabat.com>
+Date:   Thu Jun 11 15:25:39 2015 +0100
+
+    Merge branch 'gianarb-feature/vagrant-slim'
+    
+    Closes #288
+
+[33mcommit e9d9d5ce26ae03dbeada5a42358aa82c2032a098[m
+Author: Rob Allen <rob@akrabat.com>
+Date:   Thu Jun 11 15:25:19 2015 +0100
+
+    Increase VM memory to 1024
+
+[33mcommit 9c81b3d7016b763a5a97683dce232ec32d48b6f5[m
+Author: Rob Allen <rob@akrabat.com>
+Date:   Thu Jun 11 15:21:51 2015 +0100
+
+    Fix markup in README
+
+[33mcommit bb103389979cf4b25eff4d82db93c391c49266e1[m
+Author: Gianluca Arbezzano <gianarb92@gmail.com>
+Date:   Thu Jun 11 14:20:20 2015 +0200
+
+    README paragraph
+
+[33mcommit e2980fddb377bcc62a8b26e0c20aa8b30ffcb56f[m
+Author: Gianluca Arbezzano <gianarb92@gmail.com>
+Date:   Wed Jun 10 16:03:35 2015 +0200
+
+    Fixed vendor dir and composer flow
+
+[33mcommit 215a38471ff4de8bf08d74ca074775bbc927143b[m
+Author: Gianluca Arbezzano <gianarb92@gmail.com>
+Date:   Tue Jun 9 12:20:34 2015 +0200
+
+    Lite vagrantfile configuration
+    
+    This is a PR to manage integration of basic vagrant box with shell
+    provisioning.
+    Reference #287
+
+[33mcommit a131c30375d0a70133bcd9474add8569f871e506[m
+Merge: 90df40c 81e99db
+Author: Rob Allen <rob@akrabat.com>
+Date:   Thu Jun 11 09:23:17 2015 +0100
+
+    Merge branch 'jmleroux-patch-1'
+    
+    Closes #271
+
+[33mcommit 81e99dbe6ae4ea98da9e9bcadb9077935512f753[m
+Author: Rob Allen <rob@akrabat.com>
+Date:   Thu Jun 11 09:23:00 2015 +0100
+
+    Update links to config examples in manual to use latest version
+
+[33mcommit bd81c094d2e4fd796ba5c2a1dd0247b44123e5ca[m
+Author: jean-marie leroux <jmleroux.pro@gmail.com>
+Date:   Thu Sep 25 22:51:55 2014 +0200
+
+    Update application.config.php
+    
+    Give a link to the doc for an environment specific configuration.
+    I've seen many devs who have not found the link
+
+[33mcommit 90df40c4f5d2d1f4922fe22ff8ab21ce74887e22[m
+Author: rahuldroy@gmail.com <rahuldroy@gmail.com>
+Date:   Thu Sep 4 00:20:16 2014 +0800
+
+    updated html5shiv from 3.6.2 to 3.7.2
+
+[33mcommit 39ad5cf5d4cdb01b60e9ea8aadc16b82d690dedb[m
+Author: rahuldroy@gmail.com <rahuldroy@gmail.com>
+Date:   Thu Sep 4 00:16:37 2014 +0800
+
+    Updated jQuery from 1.10.2 to 1.11.1
+
+[33mcommit 5b9f2d4e3934aae0f823378056e3cc84502bd0e4[m
+Merge: a7db866 9

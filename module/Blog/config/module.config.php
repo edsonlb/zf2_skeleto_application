@@ -1,20 +1,11 @@
 <?php
 // Filename: /module/Post/config/module.config.php
 return array(
-    'db' => array(
-        'driver'         => 'Pdo',
-        'username'       => 'root',
-        'password'       => 'root',
-        'dsn'            => 'mysql:dbname=zf2tutorial;host=localhost',
-        'driver_options' => array(
-            \PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''
-        )
-    ),
     'service_manager' => array(
         'factories' => array(
-            'Blog\Mapper\PostMapperInterface'   => 'Blog\Factory\ZendDbSqlMapperFactory',
+            'Blog\Mapper\PostMapperInterface' => 'Blog\Factory\ZendDbSqlMapperFactory',
             'Blog\Service\PostServiceInterface' => 'Blog\Factory\PostServiceFactory',
-            'Zend\Db\Adapter\Adapter'           => 'Zend\Db\Adapter\AdapterServiceFactory'
+            'Zend\Db\Adapter\Adapter' => 'Zend\Db\Adapter\AdapterServiceFactory'
         )
     ),
     'view_manager' => array(

@@ -17,20 +17,4 @@ interface PostMapperInterface
      * @return array|PostInterface[]
      */
     public function findAll();
-    /**
-     * @param PostInterface $blogObject
-     *
-     * @param PostInterface $blogObject
-     *
-*@return PostInterface
-     * @throws \Exception
-     */
-    public function save(PostInterface $blogObject);
-    /**
-     * @param PostInterface $blogObject
-     *
-     * @return bool
-     * @throws \Exception
-     */
-    public function delete(PostInterface $blogObject);
 }
