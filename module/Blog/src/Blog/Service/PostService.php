@@ -2,8 +2,9 @@
  // Filename: /module/Blog/src/Blog/Service/PostService.php
  namespace Blog\Service;
 
- use Blog\Mapper\PostMapperInterface;
-
+use Blog\Mapper\PostMapperInterface;
+use Blog\Model\PostInterface;
+ 
  class PostService implements PostServiceInterface
  {
      /**
@@ -33,5 +34,10 @@
      public function findPost($id)
      {
          return $this->postMapper->find($id);
+     }
+     
+     public function savePost(PostInterface $post)
+     {
+         return $this->postMapper->save($post);
      }
  }
