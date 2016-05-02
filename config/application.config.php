@@ -10,7 +10,7 @@ return array(
     'modules' => array(
         'Application',
         'Album',
-        'Blog',
+        'Blog','Checklist',
     ),
 
     // These are various options for the listeners attached to the ModuleManager
@@ -21,7 +21,7 @@ return array(
         // Module class.
         'module_paths' => array(
             './module',
-            './vendor',
+            './vendor','./module',
         ),
 
         // An array of paths from which to glob configuration files after

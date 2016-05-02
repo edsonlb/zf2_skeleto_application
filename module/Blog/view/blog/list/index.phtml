@@ -8,7 +8,7 @@
  <article>
      <a href="http://zf2-tutorial.localhost/blog/edit/<?= $post->getId() ?>"><h1 id="post<?= $post->getId() ?>"><?= $post->getTitle() ?></h1></a>
      <p>
-         <?= $post->getText() ?>
+         <?= $post->getText() ?> <a href="http://zf2-tutorial.localhost/blog/delete/<?= $post->getId() ?>">(X - Delete)</a>
      </p>
  </article>
  <?php endforeach ?>
