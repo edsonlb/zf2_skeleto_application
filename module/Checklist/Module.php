@@ -12,6 +12,7 @@ namespace Checklist;
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
+use Checklist\Model\TaskMapper;
 
 class Module implements AutoloaderProviderInterface
 {
@@ -35,12 +36,16 @@ class Module implements AutoloaderProviderInterface
         return include __DIR__ . '/config/module.config.php';
     }
 
-    public function onBootstrap(MvcEvent $e)
+    public function getServiceConfig()
     {
-        // You may not need to do this if you're doing it elsewhere in your
-        // application
-        $eventManager        = $e->getApplication()->getEventManager();
-        $moduleRouteListener = new ModuleRouteListener();
-        $moduleRouteListener->attach($eventManager);
+        return array(
+            'factories' => array(
+                'TaskMapper' => function ($sm) {
+                    $dbAdapter = $sm->get('Zend\Db\Adapter\Adapter');
+                    $mapper = new TaskMapper($dbAdapter);
+                    return $mapper;
+                }
+            ),
+        );
     }
 }
