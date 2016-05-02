@@ -61,4 +61,31 @@
          return $result;
      
      }
+     
+     public function getTask($id)
+     {
+         $select = $this->sql->select();
+         $select->where(array('id' => $id));
+     
+         $statement = $this->sql->prepareStatementForSqlObject($select);
+         $result = $statement->execute()->current();
+         if (!$result) {
+             return null;
+         }
+     
+         $hydrator = new ClassMethods();
+         $task = new TaskEntity();
+         $hydrator->hydrate($result, $task);
+     
+         return $task;
+     }
+     
+     public function deleteTask($id)
+     {
+         $delete = $this->sql->delete();
+         $delete->where(array('id' => $id));
+     
+         $statement = $this->sql->prepareStatementForSqlObject($delete);
+         return $statement->execute();
+     }
  }
