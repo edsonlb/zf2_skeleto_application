@@ -1,22 +1,25 @@
 <?php
- // Filename: /module/Blog/src/Blog/Factory/WriteControllerFactory.php
+ // Filename: /module/Blog/src/Blog/Factory/DeleteControllerFactory.php
  namespace Blog\Factory;
 
- use Blog\Controller\WriteController;
+ use Blog\Controller\DeleteController;
  use Zend\ServiceManager\FactoryInterface;
  use Zend\ServiceManager\ServiceLocatorInterface;
 
- class WriteControllerFactory implements FactoryInterface
+ class DeleteControllerFactory implements FactoryInterface
  {
+     /**
+      * Create service
+      *
+      * @param ServiceLocatorInterface $serviceLocator
+      *
+      * @return mixed
+      */
      public function createService(ServiceLocatorInterface $serviceLocator)
      {
          $realServiceLocator = $serviceLocator->getServiceLocator();
          $postService        = $realServiceLocator->get('Blog\Service\PostServiceInterface');
-         $postInsertForm     = $realServiceLocator->get('FormElementManager')->get('Blog\Form\PostForm');
 
-         return new WriteController(
-             $postService,
-             $postInsertForm
-         );
+         return new DeleteController($postService);
      }
  }
