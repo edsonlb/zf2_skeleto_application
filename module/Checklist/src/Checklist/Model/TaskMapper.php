@@ -35,4 +35,30 @@
          $resultset->initialize($results);
          return $resultset;
      }
+     
+     public function saveTask(TaskEntity $task)
+     {
+         $hydrator = new ClassMethods();
+         $data = $hydrator->extract($task);
+     
+         if ($task->getId()) {
+             // update action
+             $action = $this->sql->update();
+             $action->set($data);
+             $action->where(array('id' => $task->getId()));
+         } else {
+             // insert action
+             $action = $this->sql->insert();
+             unset($data['id']);
+             $action->values($data);
+         }
+         $statement = $this->sql->prepareStatementForSqlObject($action);
+         $result = $statement->execute();
+     
+         if (!$task->getId()) {
+             $task->setId($result->getGeneratedValue());
+         }
+         return $result;
+     
+     }
  }
