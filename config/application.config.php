@@ -11,7 +11,8 @@ return array(
         'Application',
         'Album',
         'Blog',
-        'Checklist','Garagem',
+        'Checklist',
+        'Garagem',
     ),
 
     // These are various options for the listeners attached to the ModuleManager

@@ -1,3 +1,33 @@
-<strong>Module:</strong>        Garagem &raquo;
-<strong>Controller:</strong>    Carros &raquo;
-<strong>Action:</strong>        index
+<?php
+ $title = 'My Cars (Hands On)';
+ $this->headTitle($title);
+ ?>
+ <h1><?php echo $this->escapeHtml($title); ?></h1>
+ <p><a class="btn btn-success" href="<?php echo $this->url('carros', array('action'=>'add'));?>">Add new Car!</a></p>
+ 
+<div class="table-responsive">
+ <table class="table table-striped table-hover table-condensed">
+ <caption>This is my personal table. Click on a car to delete or edit.</caption>
+ <thead> 
+    <tr> 
+        <th>#</th> 
+        <th>Brand</th> 
+        <th>Model</th> 
+        <th>Engine</th> 
+    </tr> 
+ </thead>
+
+ <tbody>
+ <?php foreach ($carros as $carro): ?>
+    <tr>
+        <th scope="row"><?= $carro->getId(); ?></th>
+        <td><a href="<?php echo $this->url('carros', array('action'=>'edit', 'id' => $carro->getId()));?>"><?= $this->escapeHtml($carro->getMarca()); ?></a></td>
+        <td><?= $this->escapeHtml($carro->getModelo()); ?></td>
+        <td><?= number_format($carro->getMotor(),1); ?> cc</td>
+    </tr>
+ <?php endforeach; ?>
+ </tbody>
+ </table>
+</div>
+
+<div class="well well-sm">This is a Zend CRUD - My way.</div>

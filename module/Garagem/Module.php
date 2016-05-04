@@ -1,19 +1,12 @@
 <?php
-/**
- * Zend Framework (http://framework.zend.com/)
- *
- * @link      http://github.com/zendframework/Garagem for the canonical source repository
- * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license   http://framework.zend.com/license/new-bsd New BSD License
- */
-
 namespace Garagem;
 
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
+use Garagem\Model\CarroMapper;
 
-class Module implements AutoloaderProviderInterface
+class Module implements AutoloaderProviderInterface 
 {
     public function getAutoloaderConfig()
     {
@@ -34,13 +27,18 @@ class Module implements AutoloaderProviderInterface
     {
         return include __DIR__ . '/config/module.config.php';
     }
-
-    public function onBootstrap(MvcEvent $e)
+    
+    public function getServiceConfig()
     {
-        // You may not need to do this if you're doing it elsewhere in your
-        // application
-        $eventManager        = $e->getApplication()->getEventManager();
-        $moduleRouteListener = new ModuleRouteListener();
-        $moduleRouteListener->attach($eventManager);
+        return array(
+            'factories' => array(
+                'CM' => function ($sm) {
+                    //echo realpath(dirname(__FILE__));
+                    $dbAdapter = $sm->get('Zend\Db\Adapter\Adapter');
+                    $mapper = new CarroMapper($dbAdapter);
+                    return $mapper;
+                }
+            ),
+        );
     }
 }
